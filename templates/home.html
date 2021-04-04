@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<style>
+    #button{
+        position:fixed;
+        left:50%;
+        right:50%;
+    }
+</style>
+{% block content %}
+<h1 style="text-align:center">
+    {% if user.is_authenticated %}
+    hello {{user.username}}!
+    you can <a href="{% url 'logout' %}">logout</a> here
+    {% else %}
+    please <a href="{% url 'login' %}">login</a>
+    {% endif %}
+</h1>
+{% if user.is_authenticated %}
+<button id="button">
+    <a href="{% url 'celebrate_birthday' %}">Celebrate Birthday</a></button>
+{% else %}
+<p style="color:red">Login to celebrate a birthday</p>
+{% endif %}
+{% endblock %}
