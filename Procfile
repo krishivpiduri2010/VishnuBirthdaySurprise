@@ -1,1 +1,1 @@
-web: gunicorn VishnuBirthdaySurprise.wsgi --log-file -
+web: gunicorn VishnuBirthdaySurprise.wsgi
