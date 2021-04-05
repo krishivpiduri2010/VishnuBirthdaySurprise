@@ -1,8 +1,8 @@
 absl-py==0.11.0
 alabaster==0.7.12
 Anaconda-client==1.2.2
-
-
+Anaconda-navigator==1.9.12
+Anaconda-navigator==1.9.12
 appdirs==1.4.4
 argh==0.26.2
 asgiref==3.3.1
