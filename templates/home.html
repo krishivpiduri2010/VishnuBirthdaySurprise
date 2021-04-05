@@ -10,7 +10,7 @@
 <h1 style="text-align:center">
     {% if user.is_authenticated %}
     hello {{user.username}}!
-    you can <a href="{% url 'logout' %}">logout</a> here
+    click here to <a href="{% url 'logout' %}">logout</a>
     {% else %}
     please <a href="{% url 'login' %}">login</a>
     {% endif %}
